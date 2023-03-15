@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+    font-style: normal;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #000;
+}
+
+i {
+    font-style: unset;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.page {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1246px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 4rem 8rem;
+    margin: 0 auto;
+}
+
+/* CATALOG */
+
+.catalog {}
+
+.section__title {
+    margin: 0 0 4rem 0;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+.catalog__title {}
+
+/* HEADER */
+
+.catalog__header {
+    background-color: #EDEDED;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 0 2rem 0;
+
+    width: 100%;
+}
+
+.catalog__header-item {
+    font-weight: 500;
+
+    padding: 1.4rem 0 1.2rem;
+    text-align: center;
+
+    border-bottom: .4rem solid transparent;
+
+    width: 25%;
+
+}
+
+.catalog__header-item:first-child {
+    border-radius: 1rem 0px 0px 1rem;
+}
+
+.catalog__header-item:last-child {
+    border-radius: 0px 1rem 1rem 0px;
+}
+
+.catalog__header-item:hover,
+.catalog__header-item.active {
+    cursor: pointer;
+
+    color: #E57F66;
+    border-color: #E57F66;
+}
+
+/* DESCRIPTION */
+
+.catalog__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog__description-show {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.catalog__description-text {}
+
+.catalog__description-text:not(.opacity):hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.catalog__description-text.opacity {
+    color: rgba(0, 0, 0, .3);
+}
+
+.catalog__description-quantity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.catalog__description-quantity-item {
+    padding: 1.5rem;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+.catalog__description-quantity-item:hover,
+.catalog__description-quantity-item.active {
+    cursor: pointer;
+    background-color: #E57F66;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.catalog__description-quantity-item.active {
+    cursor: auto;
+}
+
+.catalog__description-sort {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.catalog__description-sort-text {}
+
+/* BODY */
+
+.catalog__body {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 2rem 0 4rem;
+
+    border: .1rem dotted #000;
+}
+
+.catalog__card {
+    width: 23%;
+
+    border-radius: 1rem;
+    border: .2rem solid #EDEDED;
+
+    /* transition: all .2s linear; */
+}
+
+.catalog__card:hover {
+    border-color: #E57F66;
+    /* scale: 1.1; */
+}
+
+.catalog__card-header {
+    position: relative;
+}
+
+.catalog__card-image {
+    position: relative;
+    z-index: 1;
+
+    /* cursor: pointer; */
+}
+
+.catalog__card-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.catalog__card-description {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+
+    background-color: #fff;
+    color: #E57F66;
+
+    border-radius: .8rem;
+
+    align-items: center;
+    display: flex;
+    gap: .4rem;
+
+    padding: 1rem;
+
+    font-weight: 500;
+}
+
+.catalog__card-description img {
+    transition: all .2s linear;
+}
+
+.catalog__card-description img:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.image-size {}
+
+.catalog__card-content {
+    padding: 3rem 2rem 3rem 2rem;
+}
+
+.catalog__card-title {
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin: 0 0 1.2rem 0;
+}
+
+.catalog__card-info {}
+
+.catalog__card-info:nth-child(3) {
+    margin: .8rem 0;
+}
+
+.info-name {
+    margin: 0 .8rem 0 0;
+
+    color: rgba(0, 0, 0, .3);
+}
+
+.info-value {}
+
+.catalog__card-footer {
+    margin: 1.5rem 0 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-price {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #E57F66;
+}
+
+.footer-discount {
+    color: rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.footer-discount img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.footer-image {
+    transition: all .2s linear;
+}
+
+.footer-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+
+    background: #E57F66;
+    border-radius: 10px;
+    border: 0;
+
+    padding: 1rem 3rem;
+
+    color: #fff;
+
+    transition: all .2s linear;
+}
+
+.button:hover,
+.footer-image:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.catalog__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+
+    width: 100%;
+    max-width: 566px;
+
+    margin: 0 auto;
+}
+
+.catalog__footer-image {
+    transition: all .2s linear;
+}
+
+.catalog__footer-image:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.catalog__footer-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.catalog__number-pages {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.catalog__number-count {
+    width: 40px;
+    height: 40px;
+
+    padding: 1rem;
+
+    border-radius: 1rem;
+
+    text-align: center;
+
+    transition: all .2s linear;
+}
+
+.catalog__number-count:hover,
+.catalog__number-count.active {
+    background-color: #E57F66;
+    color: #fff;
+    scale: 1.1;
+}
