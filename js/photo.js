@@ -149,4 +149,5 @@ function editPaddingLarge() {
     upButton.style.paddingTop = '3rem';
     downButton.style.paddingBottom = '3rem';
     downButton.style.paddingTop = '3rem';
+    columnImages.style.gap = '2.5rem'
 }
