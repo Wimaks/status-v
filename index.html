@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <!-- <link rel="stylesheet" href="src/css/popup.css"> -->
     <title>Status-V</title>
 </head>
 
@@ -40,7 +41,7 @@
                         </div>
                         <div class="catalog__body">
 
-                            <div class="catalog__card"><a href="#" class="catalog__card-link">
+                            <div class="catalog__card"><a href="product.html" class="catalog__card-link">
                                     <div class="catalog__card-header">
                                         <div class="catalog__card-image">
                                             <img src="src/img/hormann_1.png" alt="Изображение товара">
@@ -71,7 +72,8 @@
                                 </a></div>
 
 
-                            <div class="catalog__card"><a href="#" class="catalog__card-link">
+                            <div class="catalog__card">
+                                <a href="#" class="catalog__card-link">
                                     <div class="catalog__card-header">
                                         <div class="catalog__card-image">
                                             <img src="src/img/alutech.png" alt="Изображение товара">
@@ -106,7 +108,8 @@
                                             <!-- <button class="button">Купить</button> -->
                                         </div>
                                     </div>
-                                </a></div>
+                                </a>
+                            </div>
 
 
                             <div class="catalog__card"><a href="#" class="catalog__card-link">
@@ -424,7 +427,7 @@
                                 <img src="src/img/aleft.svg" alt="">
                             </div>
                             <div class="catalog__number-pages">
-                                <a class="catalog__number-count" href="#">1</a>
+                                <a class="catalog__number-count active" href="#">1</a>
                                 <a class="catalog__number-count" href="#">2</a>
                                 <a class="catalog__number-count" href="#">3</a>
                                 <a class="catalog__number-count" href="#">4</a>
@@ -441,6 +444,52 @@
             </section>
         </main>
     </div>
+    <!-- <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <h2 class="popup__title">Оставьте свои данные для связи</h2>
+                <a href="#" class="popup__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        class="to-svg">
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(0.707109 0.707105 -0.707109 0.707105 12.6 0.000244141)" fill="#1298BD">
+                        </rect>
+
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(-0.707109 0.707105 -0.707109 -0.707105 14 12.5999)" fill="#1298BD">
+                        </rect>
+                    </svg>
+                </a>
+                <div class="popup__form">
+                    <form action="#" id="form" class="popup__form-body">
+                        <div class="popup__form-item">
+                            <label for="formName" class="popup__form-label">Имя*:</label>
+                            <input id="formName" type="text" name="name" class="popup__form-input _req">
+                        </div>
+                        <div class="popup__form-item">
+                            <label for="formEmail" class="popup__form-label">E-mail*:</label>
+                            <input id="formEmail" type="text" name="email" class="popup__form-input _req _email">
+                        </div>
+                        <div class="popup__form-item">
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" name="agreement"
+                                    class="checkbox__input _req">
+                                <label for="formAgreement" class="checkbox__label"><span>Отправляя форму,
+                                        вы соглашаетесь на обработку <a href="src/personal.pdf"
+                                            target="_blank">персональных данных</a></span></label>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="button button-blue popup__form-button button-submit"><i>Отправить</i><span></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

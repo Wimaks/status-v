@@ -78,7 +78,7 @@ li {
 }
 
 .section {
-    padding: 4rem 8rem;
+    padding: 4rem 0;
     margin: 0 auto;
 }
 
@@ -203,7 +203,7 @@ li {
 
     margin: 2rem 0 4rem;
 
-    border: .1rem dotted #000;
+    /* border: .1rem dotted #000; */
 }
 
 .catalog__card {
@@ -336,7 +336,7 @@ li {
 
     background: #E57F66;
     border-radius: 10px;
-    border: 0;
+    border: 1px solid transparent;
 
     padding: 1rem 3rem;
 
@@ -349,6 +349,12 @@ li {
 .footer-image:hover {
     scale: 1.1;
     cursor: pointer;
+}
+
+.button.button--white {
+    border-color: #E57F66;
+    background-color: #fff;
+    color: #000;
 }
 
 /* FOOTER */
