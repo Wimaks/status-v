@@ -65,4 +65,40 @@ document.addEventListener('DOMContentLoaded', function () {
     show36Btn.addEventListener("click", () => {
         showProductItems(36);
     });
+
+    if (window.innerWidth < 575) {
+        show12Btn.textContent = '6'
+        show24Btn.textContent = '12'
+        show36Btn.textContent = '24'
+
+        showProductItems(6);
+
+        show12Btn.addEventListener("click", () => {
+            showProductItems(6);
+        });
+
+        show24Btn.addEventListener("click", () => {
+            showProductItems(12);
+        });
+
+        show36Btn.addEventListener("click", () => {
+            showProductItems(24);
+        });
+    }
+
+
+    // const hiddenCards = catalog.querySelectorAll('.catalog__card[style*="display: none"]')
+
+    // // console.log(hiddenCards);
+
+    // const data = [];
+    // hiddenCards.forEach(element => {
+    //     data.push({
+    //         html: element.outerHTML,
+    //         css: getComputedStyle(element).cssText
+    //     });
+    // });
+
+    // localStorage.setItem('hiddenCards', JSON.stringify(data));
 })
+
