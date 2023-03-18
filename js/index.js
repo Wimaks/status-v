@@ -1,18 +1,27 @@
-$(document).ready(function () {
-    //* POPUP
+// let button = document.querySelector('.footer-image');
+// let card = document.querySelector('.catalog__card');
+// let discount = document.querySelector('.footer-discount')
+// let btnText = '<span>Купить</span>';
+// let btnImage = '<img src="src/img/buy.svg" id="button-image" alt="Корзина">';
 
-    $('.popup-link').on('click', function (event) {
-        event.preventDefault();
+const cards = document.querySelectorAll('.catalog__card');
 
-        $('.popup').toggleClass('active')
-    })
+cards.forEach(function (card) {
+    // let card = document.querySelector('.catalog__card');
+    let button = card.querySelector('.footer-image');
+    let discount = card.querySelector('.footer-discount');
+    let btnText = '<span>Купить</span>';
+    let btnImage = '<img src="/src/img/buy.svg" id="button-image" alt="Корзина">';
 
-    $('.popup__close').on('click', function (event) {
-        event.preventDefault();
+    if (card.querySelector('.footer-discount')) {
+        card.addEventListener('mouseover', () => {
+            button.innerHTML = btnText;
+            discount.style.display = 'none'
+        });
 
-        $('.popup').removeClass('active')
-        $('.popup__content').removeClass('_sending')
-        $('#form').trigger("reset");
-        $('.popup__form-input').removeClass('_error')
-    })
-})
+        card.addEventListener('mouseleave', () => {
+            button.innerHTML = btnImage;
+            discount.style.display = 'block';
+        });
+    }
+});

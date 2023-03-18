@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/product.css">
-    <link rel="stylesheet" href="src/css/popup.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/product.css">
+    <link rel="stylesheet" href="/src/css/popup.css">
     <title>Product</title>
 </head>
 
@@ -17,43 +17,47 @@
 
             <h5 class="product__title">
                 <a href="#" class="title-link">Главная /</a>
-                <a href="#" class="title-link">Каталог /</a>
+                <a href="index.html" class="title-link">Каталог /</a>
                 <a href="#" class="title-link">...</a>
             </h5>
             <div class="product">
                 <div class="product__images">
                     <div class="product__images-column">
                         <button class="product__image-arrow up-button">
-                            <img src="src/img/product/arrow-down.svg" alt="">
+                            <img src="/src/img/product/arrow-down.svg" alt="">
                         </button>
                         <div class="product__image-small">
-                            <img class="small-image active" data-src="src/img/product/image-main.jpg"
-                                src="src/img/product/1.jpg" alt="" id="first-image">
+                            <img class="small-image active" data-src="/src/img/alutech_2.jpg"
+                                src="/src/img/product/1.jpg" alt="" id="first-image">
                         </div>
                         <div class="product__image-small">
-                            <img class="small-image" data-src="src/img/product/image-main_2.jpg"
-                                src="src/img/product/2.jpg" alt="" id="second-image">
+                            <img class="small-image" data-src="/src/img/product/image-main_2.jpg"
+                                src="/src/img/product/2.jpg" alt="" id="second-image">
                         </div>
                         <div class="product__image-small">
-                            <img class="small-image" data-src="src/img/product/image-main_3.jpg"
-                                src="src/img/product/3.jpg" alt="" id="last-image">
+                            <img class="small-image" data-src="/src/img/product/image-main_3.jpg"
+                                src="/src/img/product/3.jpg" alt="" id="last-image">
                         </div>
                         <button class="product__image-arrow down-button">
-                            <img src="src/img/product/arrow-down.svg" alt="">
+                            <img src="/src/img/product/arrow-down.svg" alt="">
                         </button>
 
                     </div>
                     <div class="product__image">
-                        <img class="big-image" src="src/img/product/image-main.jpg" alt="">
+                        <img class="big-image" src="/src/img/alutech_2.jpg" alt="">
+                        <div class="catalog__card-description">
+                            <img src="/src/img/inc.svg" alt="increase">
+                            <span class="image-size">2,75х2,5­м</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product__body">
                     <div class="product__body-content">
-                        <h3 class="product__body-title">HÖRMANN RenoMatic 42</h3>
-                        <p class="product__body-price">от 23 958₽</p>
-                        <p class="product__body-text">Концерн HÖRMANN - ведущий производитель ворот в Европе.
-                            Вся продукция HÖRMANN имеет немецкое происхождение и сборку. Данные ворота и другие продукты
-                            отличаются непревзойдённым качеством, высоким уровнем комфорта и долговечностью работы.</p>
+                        <h3 class="product__body-title">Alutech Trend</h3>
+                        <p class="product__body-price">от 49 136₽</p>
+                        <p class="product__body-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                            autem, eaque voluptate officia alias praesentium, culpa tempore voluptatum veritatis nemo
+                            asperiores a amet nostrum maxime minus sapiente rerum reprehenderit unde?</p>
                         <div class="product__body-description">
                             <div class="product-description__item">
                                 <span class="info-name">Тип:</span>
@@ -71,9 +75,9 @@
                     </div>
 
                     <div class="product__body-footer">
-                        <button class="button button--white button--count">-</button>
+                        <button class="button button--count button-dec" id="button-dec" disabled>-</button>
                         <span class="product-count">1</span>
-                        <button class="button button--count">+</button>
+                        <button class="button button--count" id="button-inc">+</button>
                         <button class="button product--button popup-link">Заказать</button>
                     </div>
                 </div>
@@ -87,18 +91,18 @@
 
             <div class="other-product">
                 <div class="catalog__card">
-                    <a href="#" class="catalog__card-link">
+                    <a href="product.html" class="catalog__card-link">
                         <div class="catalog__card-header">
                             <div class="catalog__card-image">
-                                <img src="src/img/alutech.png" alt="Изображение товара">
+                                <img src="/src/img/hormann_1.png" alt="Изображение товара">
                             </div>
                             <div class="catalog__card-description">
-                                <img src="src/img/inc.svg" alt="increase">
+                                <img src="/src/img/inc.svg" alt="increase">
                                 <span class="image-size">2,75х2,5­м</span>
                             </div>
                         </div>
                         <div class="catalog__card-content">
-                            <h4 class="catalog__card-title">Alutech Trend</h4>
+                            <h4 class="catalog__card-title">HÖRMANN RenoMatic 42</h4>
                             <p class="catalog__card-info">
                                 <span class="info-name">Тип:</span><span class="info-value">Распашные</span>
                             </p>
@@ -110,12 +114,12 @@
                                     калиткой</span>
                             </p>
                             <div class="catalog__card-footer">
-                                <span class="footer-price">от 49 136₽</span>
+                                <span class="footer-price">от 23 958₽</span>
                                 <span class="footer-discount">29 999₽
-                                    <img src="src/img/line.svg" alt="">
+                                    <img src="/src/img/line.svg" alt="">
                                 </span>
                                 <div class="footer-image">
-                                    <img src="src/img/buy.svg" alt="Корзина">
+                                    <img src="/src/img/buy.svg" alt="Корзина">
                                 </div>
 
                                 <!-- <button class="button">Купить</button> -->
@@ -127,10 +131,10 @@
                     <a href="#" class="catalog__card-link">
                         <div class="catalog__card-header">
                             <div class="catalog__card-image">
-                                <img src="src/img/alutech.png" alt="Изображение товара">
+                                <img src="/src/img/alutech.png" alt="Изображение товара">
                             </div>
                             <div class="catalog__card-description">
-                                <img src="src/img/inc.svg" alt="increase">
+                                <img src="/src/img/inc.svg" alt="increase">
                                 <span class="image-size">2,75х2,5­м</span>
                             </div>
                         </div>
@@ -149,11 +153,11 @@
                             <div class="catalog__card-footer">
                                 <span class="footer-price">от 49 136₽</span>
                                 <span class="footer-discount">29 999₽
-                                    <img src="src/img/line.svg" alt="">
+                                    <img src="/src/img/line.svg" alt="">
                                 </span>
-                                <div class="footer-image">
-                                    <img src="src/img/buy.svg" alt="Корзина">
-                                </div>
+                                <button class="button button--card footer-image">
+                                    <img src="/src/img/buy.svg" alt="Корзина">
+                                </button>
 
                                 <!-- <button class="button">Купить</button> -->
                             </div>
@@ -164,10 +168,10 @@
                     <a href="#" class="catalog__card-link">
                         <div class="catalog__card-header">
                             <div class="catalog__card-image">
-                                <img src="src/img/alutech.png" alt="Изображение товара">
+                                <img src="/src/img/alutech.png" alt="Изображение товара">
                             </div>
                             <div class="catalog__card-description">
-                                <img src="src/img/inc.svg" alt="increase">
+                                <img src="/src/img/inc.svg" alt="increase">
                                 <span class="image-size">2,75х2,5­м</span>
                             </div>
                         </div>
@@ -186,11 +190,11 @@
                             <div class="catalog__card-footer">
                                 <span class="footer-price">от 49 136₽</span>
                                 <span class="footer-discount">29 999₽
-                                    <img src="src/img/line.svg" alt="">
+                                    <img src="/src/img/line.svg" alt="">
                                 </span>
-                                <div class="footer-image">
-                                    <img src="src/img/buy.svg" alt="Корзина">
-                                </div>
+                                <button class="button button--card footer-image">
+                                    <img src="/src/img/buy.svg" alt="Корзина">
+                                </button>
 
                                 <!-- <button class="button">Купить</button> -->
                             </div>
@@ -201,10 +205,10 @@
                     <a href="#" class="catalog__card-link">
                         <div class="catalog__card-header">
                             <div class="catalog__card-image">
-                                <img src="src/img/alutech.png" alt="Изображение товара">
+                                <img src="/src/img/alutech.png" alt="Изображение товара">
                             </div>
                             <div class="catalog__card-description">
-                                <img src="src/img/inc.svg" alt="increase">
+                                <img src="/src/img/inc.svg" alt="increase">
                                 <span class="image-size">2,75х2,5­м</span>
                             </div>
                         </div>
@@ -222,12 +226,12 @@
                             </p>
                             <div class="catalog__card-footer">
                                 <span class="footer-price">от 49 136₽</span>
-                                <span class="footer-discount">29 999₽
-                                    <img src="src/img/line.svg" alt="">
-                                </span>
-                                <div class="footer-image">
-                                    <img src="src/img/buy.svg" alt="Корзина">
-                                </div>
+                                <!-- <span class="footer-discount">29 999₽
+                                    <img src="/src/img/line.svg" alt="">
+                                </span> -->
+                                <button class="button button--card footer-image">
+                                    <span>Купить</span>
+                                </button>
 
                                 <!-- <button class="button">Купить</button> -->
                             </div>
@@ -256,29 +260,35 @@
                 <div class="popup__form">
                     <form action="#" id="form" class="popup__form-body">
                         <div class="popup__form-item">
-                            <label for="formName" class="popup__form-label">Имя*:</label>
-                            <input id="formName" type="text" name="name" class="popup__form-input _req">
+                            <!-- <label for="formName" class="popup__form-label">Имя*:</label> -->
+                            <input id="formName" type="text" name="name" placeholder="Имя"
+                                class="popup__form-input _req">
                         </div>
                         <div class="popup__form-item">
-                            <label for="formEmail" class="popup__form-label">E-mail*:</label>
-                            <input id="formEmail" type="text" name="email" class="popup__form-input _req _email">
+                            <!-- <label for="formName" class="popup__form-label">Имя*:</label> -->
+                            <input id="formPhone" type="tel" name="phone" placeholder="Телефон" data-tel-input
+                                class="popup__form-input input-phone _req">
                         </div>
                         <div class="popup__form-item">
-                            <label for="formName" class="popup__form-label">Имя*:</label>
-                            <input id="formPhone" type="tel" name="phone" data-tel-input class="input-phone _req">
+                            <!-- <label for="formEmail" class="popup__form-label">E-mail*:</label> -->
+                            <input id="formEmail" type="text" name="email" placeholder="Электронная почта"
+                                class="popup__form-input _req _email">
+                        </div>
+
+                        <div class="pupup__form-item">
+                            <textarea name="text_comment" id="product__textarea" placeholder="Комментарий"
+                                class="popup__form-textarea"></textarea>
                         </div>
                         <div class="popup__form-item">
                             <div class="checkbox">
-                                <input id="formAgreement" checked type="checkbox" name="agreement"
-                                    class="checkbox__input _req">
-                                <label for="formAgreement" class="checkbox__label"><span>Отправляя форму,
-                                        вы соглашаетесь на обработку <a href="src/personal.pdf"
-                                            target="_blank">персональных данных</a></span></label>
+                                <!-- <input id="formAgreement" checked type="checkbox" name="agreement"
+                                    class="checkbox__input _req"> -->
+                                <label for="formAgreement" class="checkbox__label"><span>Отправляя форму, вы даёте
+                                        согласие на обработку <a href="#" target="_blank">персональных
+                                            данных</a></span></label>
                             </div>
                         </div>
-                        <button type="submit"
-                            class="button button-blue popup__form-button button-submit"><i>Отправить</i><span></span>
-                        </button>
+                        <button type="submit" class="button popup__form-button">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -289,10 +299,12 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
-    <script src="js/form.js"></script>
-    <script src="js/phone.js"></script>
-    <script src="js/photo.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/form.js"></script>
+    <script src="/js/phone.js"></script>
+    <script src="/js/photo.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/count.js"></script>
 </body>
 
 </html>

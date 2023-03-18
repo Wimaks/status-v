@@ -60,6 +60,11 @@ li {
     padding: 0;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 *,
 *:before,
 *:after {
@@ -161,27 +166,27 @@ li {
     color: rgba(0, 0, 0, .3);
 }
 
-.catalog__description-quantity {
+.catalog__description-buttons {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.catalog__description-quantity-item {
+.catalog__description-button {
     padding: 1.5rem;
     color: rgba(0, 0, 0, .5);
     text-align: center;
 }
 
-.catalog__description-quantity-item:hover,
-.catalog__description-quantity-item.active {
+.catalog__description-button:hover,
+.catalog__description-button.active {
     cursor: pointer;
     background-color: #E57F66;
     border-radius: 1rem;
     color: #fff;
 }
 
-.catalog__description-quantity-item.active {
+.catalog__description-button.active {
     cursor: auto;
 }
 
@@ -196,10 +201,12 @@ li {
 /* BODY */
 
 .catalog__body {
-    display: flex;
+    /* display: flex; */
     gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     margin: 2rem 0 4rem;
 
@@ -207,7 +214,7 @@ li {
 }
 
 .catalog__card {
-    width: 23%;
+    /* width: 23%; */
 
     border-radius: 1rem;
     border: .2rem solid #EDEDED;
@@ -261,10 +268,10 @@ li {
     transition: all .2s linear;
 }
 
-.catalog__card-description img:hover {
+/* .catalog__card-description img:hover {
     cursor: pointer;
     scale: 1.1;
-}
+} */
 
 .image-size {}
 
@@ -279,7 +286,10 @@ li {
     margin: 0 0 1.2rem 0;
 }
 
-.catalog__card-info {}
+.catalog__card-info {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .catalog__card-info:nth-child(3) {
     margin: .8rem 0;
@@ -326,6 +336,11 @@ li {
     transition: all .2s linear;
 }
 
+.footer-image span {
+    display: block;
+    padding: 1rem 3.2rem;
+}
+
 .footer-image img {
     display: block;
     max-width: 100%;
@@ -351,10 +366,10 @@ li {
     cursor: pointer;
 }
 
-.button.button--white {
-    border-color: #E57F66;
-    background-color: #fff;
-    color: #000;
+.button.button--card {
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* FOOTER */

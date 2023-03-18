@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //     form.classList.remove('_sending');
             // }
         } else {
-            alert('Заполните обязательные поля');
+            alert('Вы не заполнили поля или неверно заполнили');
         }
 
     }
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (input.classList.contains('_email')) {
                 if (emailTest(input)) {
                     formAddError(input);
-                    error++;
+                    error++
                 }
             } else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
                 formAddError(input);
@@ -71,3 +71,21 @@ document.addEventListener('DOMContentLoaded', function () {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
 });
+
+// Получаем элемент textarea
+var textarea = document.querySelector("#product__textarea");
+
+// Устанавливаем начальную высоту textarea
+textarea.style.height = "auto";
+
+// Устанавливаем максимальную высоту textarea
+textarea.style.maxHeight = "500px";
+
+// Функция для изменения высоты textarea
+function adjustTextareaHeight() {
+    textarea.style.height = "auto";
+    textarea.style.height = textarea.scrollHeight + "px";
+}
+
+// Вызываем функцию при вводе текста в textarea
+textarea.addEventListener("input", adjustTextareaHeight);
